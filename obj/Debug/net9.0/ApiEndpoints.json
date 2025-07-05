@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "BookStoreWeb.Areas.API.Controllers.PaymentController",
+    "Method": "MomoIPN",
+    "RelativePath": "api/payment/ipn",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "System.Text.Json.JsonElement",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BookStoreWeb.Areas.API.Controllers.StripeWebhookController",
+    "Method": "StripeWebhook",
+    "RelativePath": "api/stripe/webhook",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

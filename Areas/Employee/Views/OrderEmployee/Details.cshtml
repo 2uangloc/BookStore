@@ -1,0 +1,278 @@
+﻿@model BookStore.Models.ViewModels.OrderVM
+
+@{
+    ViewData["Title"] = "Order Summary";
+}
+<form method="post">
+    <input asp-for="OrderHeader.Id" hidden />
+    <br />
+    <div class="card">
+        <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+            <h5 class="mb-0">Order Summary</h5>
+            <a class="btn btn-outline-primary btn-sm form-control" asp-action="Index">Back to Orders</a>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <!-- Left Column -->
+                <div class="col-md-6">
+                    <h4 class="text-secondary mb-3">PickUp Details:</h4>
+
+                    <div class="form-group mb-2">
+                        <label>Name</label>
+                        @if (Model.OrderHeader.OrderStatus == SD.StatusPending || Model.OrderHeader.OrderStatus == SD.StatusApproved)
+                        {
+                            <input asp-for="OrderHeader.Name" class="form-control" type="text" />
+                            <span asp-validation-for="OrderHeader.Name" class="text-danger"></span>
+                        }
+                        else
+                        {
+                            <input asp-for="OrderHeader.Name" class="form-control" readonly />
+                        }
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label>Phone</label>
+                        @if (Model.OrderHeader.OrderStatus == SD.StatusPending || Model.OrderHeader.OrderStatus == SD.StatusApproved)
+                        {
+                            <input asp-for="OrderHeader.PhoneNumber" class="form-control" type="text" />
+                            <span asp-validation-for="OrderHeader.PhoneNumber" class="text-danger"></span>
+                        }
+                        else
+                        {
+                            <input asp-for="OrderHeader.PhoneNumber" class="form-control" readonly />
+                        }
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label>Address</label>
+                        @if (Model.OrderHeader.OrderStatus == SD.StatusPending || Model.OrderHeader.OrderStatus == SD.StatusApproved)
+                        {
+                            <input asp-for="OrderHeader.StreetAddress" class="form-control" type="text" />
+                            <span asp-validation-for="OrderHeader.StreetAddress" class="text-danger"></span>
+                        }
+                        else
+                        {
+                            <input asp-for="OrderHeader.StreetAddress" class="form-control" readonly />
+                        }
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label>City</label>
+                        @if (Model.OrderHeader.OrderStatus == SD.StatusPending || Model.OrderHeader.OrderStatus == SD.StatusApproved)
+                        {
+                            <input asp-for="OrderHeader.City" class="form-control" type="text" />
+                            <span asp-validation-for="OrderHeader.City" class="text-danger"></span>
+                        }
+                        else
+                        {
+                            <input asp-for="OrderHeader.City" class="form-control" readonly />
+                        }
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label>State</label>
+                        @if (Model.OrderHeader.OrderStatus == SD.StatusPending || Model.OrderHeader.OrderStatus == SD.StatusApproved)
+                        {
+                            <input asp-for="OrderHeader.State" class="form-control" type="text" />
+                            <span asp-validation-for="OrderHeader.State" class="text-danger"></span>
+                        }
+                        else
+                        {
+                            <input asp-for="OrderHeader.State" class="form-control" readonly />
+                        }
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label>Zip Code</label>
+                        @if (Model.OrderHeader.OrderStatus == SD.StatusPending || Model.OrderHeader.OrderStatus == SD.StatusApproved)
+                        {
+                            <input asp-for="OrderHeader.PostalCode" class="form-control" type="text" />
+                            <span asp-validation-for="OrderHeader.PostalCode" class="text-danger"></span>
+                        }
+                        else
+                        {
+                            <input asp-for="OrderHeader.PostalCode" class="form-control" readonly />
+                        }
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label>Email</label>
+                        <input asp-for="OrderHeader.ApplicationUser.Email" class="form-control" readonly />
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label>Order Date</label>
+                        <input value="@Model.OrderHeader.OrderDate.ToShortDateString()" class="form-control" readonly />
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label>Carrier</label>
+                        @if (Model.OrderHeader.OrderStatus == SD.StatusPending || Model.OrderHeader.OrderStatus == SD.StatusApproved)
+                        {
+                            <input asp-for="OrderHeader.Carrier" id="carrier" class="form-control" type="text" />
+                        }
+                        else
+                        {
+                            <input asp-for="OrderHeader.Carrier" class="form-control" readonly />
+                        }
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label>Tracking</label>
+                        @if (Model.OrderHeader.OrderStatus == SD.StatusPending || Model.OrderHeader.OrderStatus == SD.StatusApproved)
+                        {
+                            <input asp-for="OrderHeader.TrackingNumber" id="trackingNumber" class="form-control" type="text" />
+                        }
+                        else
+                        {
+                            <input asp-for="OrderHeader.TrackingNumber" class="form-control" readonly />
+                        }
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label>Shipping Date</label>
+                        <input value="@Model.OrderHeader.ShippingDate.ToShortDateString()" class="form-control" readonly />
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label>Stripe Session ID</label>
+                        <input asp-for="OrderHeader.SessionId" class="form-control" readonly />
+                    </div>
+
+                    <div class="form-group mb-2">
+                        <label>Stripe PaymentIntent ID</label>
+                        <input asp-for="OrderHeader.PaymentIntentId" class="form-control" readonly />
+                    </div>
+
+                    <div class="form-group mb-2">
+                        @if (Model.OrderHeader.SessionId == null)
+                        {
+                            <label>Payment Due Date</label>
+                            <input value="@Model.OrderHeader.PaymentDueDate.ToShortDateString()" class="form-control" readonly />
+                        }
+                        else
+                        {
+                            <div class="form-group mb-2">
+                                <label>Payment Date</label>
+                                <input value="@Model.OrderHeader.PaymentDate.ToShortDateString()" class="form-control" readonly />
+                            </div>
+                        }
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label>Payment Status</label>
+                        <input asp-for="OrderHeader.PaymentStatus" class="form-control" readonly />
+                    </div>
+
+                    @if (Model.OrderHeader.OrderStatus == SD.StatusPending || Model.OrderHeader.OrderStatus == SD.StatusApproved)
+                    {
+                        <button type="submit" asp-action="UpdateOrderDetail" class="btn btn-warning w-100 form-group">Update Order Details</button>
+                    }
+                </div>
+
+                <!-- Right Column -->
+                <div class="col-md-6">
+                    <h4 class="text-secondary mb-3">Order Summary</h4>
+                    <div class="form-group mb-3 text-center">
+                        <partial name="_OrderStatusBadge" model="@Model.OrderHeader.OrderStatus" />
+                        <div class="mt-2">ORDER STATUS - @Model.OrderHeader.OrderStatus</div>
+                    </div>
+
+                    <ul class="list-group mb-3">
+                        @foreach (var detail in Model.OrderDetail)
+                        {
+                            <li class="list-group-item d-flex justify-content-between p-2">
+                                <div class="row container">
+                                    <div class="col-8">
+                                        <h6 class="my-0 text-primary">@detail.Product.Title</h6>
+                                        <small class="text-muted">Price: @detail.Price.ToString("c")</small><br />
+                                        <small class="text-muted">Quantity: @detail.Count</small>
+                                    </div>
+                                </div>
+                                <div class="text-end">
+                                    <p class="text-success">@((detail.Count * detail.Price).ToString("c"))</p>
+                                </div>
+                            </li>
+                        }
+
+                        <li class="list-group-item bg-primary">
+                            <div class="row container">
+                                <div class="col-6">
+                                    <h5 class="text-white">TOTAL</h5>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <h5 class="text-white">
+                                        @Model.OrderHeader.OrderTotal.ToString("c", new System.Globalization.CultureInfo("vi-VN"))
+                                    </h5>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="mt-4 d-grid gap-2">
+                        @if (User.IsInRole(SD.Role_Employee))
+                        {
+                            if (Model.OrderHeader.OrderStatus == SD.StatusApproved)
+                            {
+                                <button type="submit" asp-action="StartProcessing" class="btn btn-primary form-control my-1">START PROCESSING</button>
+                            }
+                            if (Model.OrderHeader.OrderStatus == SD.StatusInProcess)
+                            {
+                                <button type="submit" asp-action="ShipOrder" onclick="return validateInput()" class="btn btn-primary form-control my-1">SHIP ORDER</button>
+                            }
+                            @if (Model.OrderHeader.OrderStatus == SD.StatusShipped)
+                            {
+                                <div class="alert alert-warning mt-3" role="alert">
+                                    <h5 class="alert-heading"><i class="bi bi-exclamation-triangle-fill"></i> Xác nhận trước khi hoàn tất đơn hàng</h5>
+                                    <p>
+                                        Nếu bạn đã chắc chắn rằng <strong>đơn hàng đã được giao thành công</strong> đến khách hàng và <strong>shipper đã thu tiền COD</strong>, hãy nhấn nút <strong>"Completed"</strong> để đánh dấu đơn hàng đã hoàn tất.
+                                    </p>
+                                    <hr />
+                                    <p class="mb-0">Lưu ý: Sau khi nhấn, trạng thái đơn hàng sẽ không thể hoàn tác.</p>
+                                </div>
+
+                                <form method="post">
+                                    <button type="submit" asp-action="MarkAsCompleted" class="btn btn-success form-control my-1">MARK AS COMPLETED</button>
+                                </form>
+                            }
+
+                            if (Model.OrderHeader.OrderStatus == SD.StatusPending
+                            || Model.OrderHeader.OrderStatus == SD.StatusApproved
+                            || Model.OrderHeader.OrderStatus == SD.StatusInProcess)
+                            {
+                                <button type="submit" asp-action="CancelOrder" class="btn btn-danger form-control my-1">CANCEL ORDER</button>
+                            }
+                        }
+                    </div>
+                </div>
+            </div> <!-- row -->
+        </div> <!-- card-body -->
+    </div> <!-- card -->
+</form>
+
+<partial name="_Notification" />
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        function validateInput() {
+            if (document.getElementById("trackingNumber").value == "") {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops',
+                    text: 'Please Enter Tracking Number!',
+                });
+                return false;
+            }
+            if (document.getElementById("carrier").value == "") {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops',
+                    text: 'Please Enter Carrier!',
+                });
+                return false;
+            }
+            return true;
+        }
+    </script>
+}

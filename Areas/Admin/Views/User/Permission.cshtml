@@ -1,0 +1,29 @@
+﻿@model ChangeRoleVM
+
+@{
+    ViewData["Title"] = "Thay đổi vai trò";
+}
+
+<h2>Thay đổi vai trò người dùng</h2>
+
+<form asp-action="Permission" method="post">
+    <input type="hidden" asp-for="UserId" />
+
+    <div class="mb-3">
+        <label>Vai trò hiện tại:</label>
+        <input class="form-control" value="@Model.CurrentRole" disabled />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="NewRole"></label>
+        <select asp-for="NewRole" asp-items="Model.AvailableRoles" class="form-select"></select>
+        <span asp-validation-for="NewRole" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Cập nhật vai trò</button>
+    <a asp-action="Details" asp-route-id="@Model.UserId" class="btn btn-secondary">Quay lại</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

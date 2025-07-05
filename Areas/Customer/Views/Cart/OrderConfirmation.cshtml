@@ -1,0 +1,57 @@
+﻿@* @model int
+
+<div class="container row pt-4">
+    <div class="col-12 text-center">
+        <h1 class="text-primary text-center">Order Placed Successfully!</h1>
+        <br>Your order number is : @Model</br>
+        <img src="~/images/Home.jpg" width="65%" />
+    </div>
+    <div class="col-12 text-center">
+        <h1 class="text-primary text-center">Order Placed Successfully!</h1>
+        <br>Your order has been placed successfully </br>
+    </div>
+</div> *@
+
+@model OrderHeader
+
+<div class="container mt-4">
+    <div class="alert alert-success" role="alert">
+        Cảm ơn bạn đã đặt hàng! Mã đơn hàng: <strong>@Model.OrderCode</strong>
+    </div>
+
+    <h4 class="mb-3">Thông tin đơn hàng</h4>
+    <table class="table table-bordered">
+        <tr>
+            <th>Tên</th>
+            <td>@Model.Name</td>
+        </tr>
+        <tr>
+            <th>Địa chỉ</th>
+            <td>@Model.StreetAddress, @Model.City, @Model.State, @Model.PostalCode</td>
+        </tr>
+        <tr>
+            <th>Số điện thoại</th>
+            <td>@Model.PhoneNumber</td>
+        </tr>
+        <tr>
+            <th>Ngày đặt</th>
+            <td>@Model.OrderDate.ToString("dd/MM/yyyy HH:mm")</td>
+        </tr>
+        <tr>
+            <th>Tổng tiền</th>
+            <td>@Model.OrderTotal.ToString("N0") VNĐ</td>
+        </tr>
+        <tr>
+            <th>Trạng thái đơn</th>
+            <td>@Model.OrderStatus</td>
+        </tr>
+        <tr>
+            <th>Phương thức thanh toán</th>
+            <td>@Model.PaymentMethod</td>
+        </tr>
+        <tr>
+            <th>Trạng thái thanh toán</th>
+            <td>@Model.PaymentStatus</td>
+        </tr>
+    </table>
+</div>

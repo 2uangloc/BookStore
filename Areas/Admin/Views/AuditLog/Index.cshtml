@@ -1,0 +1,61 @@
+﻿@model IEnumerable<AuditLog>
+@{
+    var status = Context.Request.Query["status"];
+    var pending = "text-primary";
+    var inprocess = "text-primary";
+    var completed = "text-primary";
+    var approved = "text-primary";
+    var cancelled = "text-primary";
+    var refunded = "text-primary";
+    var shipped = "text-primary";
+    var all = "text-primary";
+    switch (status)
+    {
+        case "pending": pending = "active text-white bg-primary"; break;
+        case "approved": approved = "active text-white bg-primary"; break;
+        case "inprocess": inprocess = "active text-white bg-primary"; break;
+        case "shipped": shipped = "active text-white bg-primary"; break;
+        case "completed": completed = "active text-white bg-primary"; break;
+        case "cancelled": cancelled = "active text-white bg-primary"; break;
+        case "refunded": refunded = "active text-white bg-primary"; break;
+        default: all = "active text-white bg-primary"; break;
+    }
+
+
+}
+@{
+    ViewData["Title"] = "Audit Logs";
+}
+
+<h2>Nhật ký hoạt động</h2>
+
+<table class="table table-bordered table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Thời gian</th>
+            <th>Người dùng</th>
+            <th>Hành động</th>
+            <th>Thực thể</th>
+            <th>ID</th>
+            <th>IPAddress</th>
+            <th>Mô tả</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var log in Model)
+        {
+            <tr>
+                <td>@log.Timestamp.ToString("dd/MM/yyyy HH:mm:ss")</td>
+                <td>@log.UserName</td>
+                <td>@log.Action</td>
+                <td>@log.EntityName</td>
+                <td>@log.EntityId</td>
+                <td>@log.IPAddress</td>
+                <td>@log.Description</td>
+            </tr>
+        }
+    </tbody>
+</table>
+@section Scripts {
+    <script src="~/js/OrderEmployee.js"></script>
+}

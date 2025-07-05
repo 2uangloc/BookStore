@@ -1,0 +1,405 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\BookStoreWeb.bundle.scp.css",
+      "PackagePath": "staticwebassets\\BookStoreWeb.bkrw9f95ne.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\images\\Home.jpg",
+      "PackagePath": "staticwebassets\\images\\Home.jpg"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\images\\Product\\02aaf563-acbf-4639-93f9-e016b572a927.jpg",
+      "PackagePath": "staticwebassets\\images\\Product\\02aaf563-acbf-4639-93f9-e016b572a927.jpg"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\images\\Product\\073a10ed-4d59-4603-bba8-3dbb782e3f94.jpg",
+      "PackagePath": "staticwebassets\\images\\Product\\073a10ed-4d59-4603-bba8-3dbb782e3f94.jpg"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\images\\Product\\082970ef-3495-4a76-a944-4ab2de9e3e97.png",
+      "PackagePath": "staticwebassets\\images\\Product\\082970ef-3495-4a76-a944-4ab2de9e3e97.png"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\images\\Product\\23cda6b2-b3cc-4442-b149-1c175b8d1c6b.png",
+      "PackagePath": "staticwebassets\\images\\Product\\23cda6b2-b3cc-4442-b149-1c175b8d1c6b.png"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\images\\Product\\32a2b256-3685-443a-8610-756a6ac72063.png",
+      "PackagePath": "staticwebassets\\images\\Product\\32a2b256-3685-443a-8610-756a6ac72063.png"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\images\\Product\\382f7e91-abcb-499c-be4d-91ec39411007.png",
+      "PackagePath": "staticwebassets\\images\\Product\\382f7e91-abcb-499c-be4d-91ec39411007.png"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\images\\Product\\38d706f1-2b42-4a35-b171-5e7e67a61814.jpg",
+      "PackagePath": "staticwebassets\\images\\Product\\38d706f1-2b42-4a35-b171-5e7e67a61814.jpg"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\images\\Product\\4ad155be-bf21-4e1c-90c8-f26413c082fe.png",
+      "PackagePath": "staticwebassets\\images\\Product\\4ad155be-bf21-4e1c-90c8-f26413c082fe.png"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\images\\Product\\4d5f0b7f-07b2-4f3d-a184-d2653cb01388.jpg",
+      "PackagePath": "staticwebassets\\images\\Product\\4d5f0b7f-07b2-4f3d-a184-d2653cb01388.jpg"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\images\\Product\\5288e3e1-78cc-4c9d-8256-f5c2567d1f31.jpg",
+      "PackagePath": "staticwebassets\\images\\Product\\5288e3e1-78cc-4c9d-8256-f5c2567d1f31.jpg"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\images\\Product\\5af89209-6491-4478-bd6d-bbfcbe8bd0a4.png",
+      "PackagePath": "staticwebassets\\images\\Product\\5af89209-6491-4478-bd6d-bbfcbe8bd0a4.png"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\images\\Product\\673644c7-031d-4af6-8d7a-7d82d73ace77.jpg",
+      "PackagePath": "staticwebassets\\images\\Product\\673644c7-031d-4af6-8d7a-7d82d73ace77.jpg"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\images\\Product\\6b1c010b-df8e-4c5a-9c10-359da084c44c.jpg",
+      "PackagePath": "staticwebassets\\images\\Product\\6b1c010b-df8e-4c5a-9c10-359da084c44c.jpg"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\images\\Product\\838c4d20-1ba8-4109-ad0a-ea3e0ca21a7a.png",
+      "PackagePath": "staticwebassets\\images\\Product\\838c4d20-1ba8-4109-ad0a-ea3e0ca21a7a.png"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\images\\Product\\8a6a7376-3a60-42db-9cc9-a0b65d2c8d2b.jpg",
+      "PackagePath": "staticwebassets\\images\\Product\\8a6a7376-3a60-42db-9cc9-a0b65d2c8d2b.jpg"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\images\\Product\\8b58327e-8a11-4b0e-b62e-1f82aa9c7f7f.jpg",
+      "PackagePath": "staticwebassets\\images\\Product\\8b58327e-8a11-4b0e-b62e-1f82aa9c7f7f.jpg"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\images\\Product\\8dc1443d-7f0d-475f-9d5d-1de9d5787b74.jpg",
+      "PackagePath": "staticwebassets\\images\\Product\\8dc1443d-7f0d-475f-9d5d-1de9d5787b74.jpg"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\images\\Product\\9d891c39-a784-428a-a167-4ab3a11a73ae.png",
+      "PackagePath": "staticwebassets\\images\\Product\\9d891c39-a784-428a-a167-4ab3a11a73ae.png"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\images\\Product\\a801261c-d2f2-429f-a1aa-9b832881cff2.jpg",
+      "PackagePath": "staticwebassets\\images\\Product\\a801261c-d2f2-429f-a1aa-9b832881cff2.jpg"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\images\\Product\\ca8b2d78-a539-41b0-a527-c87ec5f323ef.jpg",
+      "PackagePath": "staticwebassets\\images\\Product\\ca8b2d78-a539-41b0-a527-c87ec5f323ef.jpg"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\images\\Product\\cf34f76d-d547-419f-bb18-de4c1025c795.jpg",
+      "PackagePath": "staticwebassets\\images\\Product\\cf34f76d-d547-419f-bb18-de4c1025c795.jpg"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\images\\Product\\d35941f7-b549-4baa-bee2-5558296cc015.jpg",
+      "PackagePath": "staticwebassets\\images\\Product\\d35941f7-b549-4baa-bee2-5558296cc015.jpg"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\images\\Product\\e8b32a03-f861-439b-91b8-20d51c267b12.jpg",
+      "PackagePath": "staticwebassets\\images\\Product\\e8b32a03-f861-439b-91b8-20d51c267b12.jpg"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\images\\Product\\eb0e2c9f-7504-4860-9a46-1e67b8fa8e0b.png",
+      "PackagePath": "staticwebassets\\images\\Product\\eb0e2c9f-7504-4860-9a46-1e67b8fa8e0b.png"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\images\\Product\\ec2b73bc-d99b-4de7-9e0c-487114b5faf6.png",
+      "PackagePath": "staticwebassets\\images\\Product\\ec2b73bc-d99b-4de7-9e0c-487114b5faf6.png"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\images\\book.png",
+      "PackagePath": "staticwebassets\\images\\book.png"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\js\\orderCustomer.js",
+      "PackagePath": "staticwebassets\\js\\orderCustomer.js"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\js\\orderEmployee.js",
+      "PackagePath": "staticwebassets\\js\\orderEmployee.js"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\js\\product.js",
+      "PackagePath": "staticwebassets\\js\\product.js"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\js\\user.js",
+      "PackagePath": "staticwebassets\\js\\user.js"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.js"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.js"
+    },
+    {
+      "Id": "D:\\tailieu\\tao-web\\project\\BookStore\\BookStore\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.BookStoreWeb.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.BookStoreWeb.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.BookStoreWeb.props",
+      "PackagePath": "build\\BookStoreWeb.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.BookStoreWeb.props",
+      "PackagePath": "buildMultiTargeting\\BookStoreWeb.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.BookStoreWeb.props",
+      "PackagePath": "buildTransitive\\BookStoreWeb.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

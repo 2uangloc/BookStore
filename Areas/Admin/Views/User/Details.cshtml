@@ -1,0 +1,65 @@
+﻿@model UserDetailVM
+<a asp-area="Admin" asp-controller="User" asp-action="Index" class="btn btn-primary btn-sm">
+    Quay Lại
+</a>
+@if (Model.User.Email != SD.SuperAdminEmail)
+{
+    <a asp-action="Permission" asp-route-userId="@Model.User.Id" class="btn btn-warning">
+        Thay đổi vai trò
+    </a>
+    <form asp-action="DeleteUser" asp-route-id="@Model.User.Id" method="post" onsubmit="return confirm('Bạn có chắc muốn xoá?');">
+        <button type="submit" class="btn btn-danger btn-sm">Xoá</button>
+    </form>
+
+}
+
+
+<h2>Thông tin người dùng</h2>
+<table class="table">
+    <tr><th>Tên</th><td>@Model.User.Name</td></tr>
+    <tr><th>Email</th><td>@Model.User.Email</td></tr>
+    <tr><th>Số điện thoại</th><td>@Model.User.PhoneNumber</td></tr>
+    <tr>
+        <th>Địa chỉ</th>
+        <td>@Model.User.StreetAddress, @Model.User.State, @Model.User.City  </td>
+
+    </tr>
+    <tr>
+        <th>Postal Code</th>
+        <td>@Model.User.PostalCode</td>
+    </tr>
+</table>
+@if (Model.IsCustomer)
+{
+    <h2>Danh sách đơn hàng</h2>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Mã đơn</th>
+                <th>Ngày đặt</th>
+                <th>Trạng thái</th>
+                <th>Phương thức thanh toán</th>
+                <th>Tổng tiền</th>
+                <th>Xem</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var order in Model.Orders)
+            {
+                <tr>
+                    <td>@order.OrderCode</td>
+                    <td>@order.OrderDate.ToString("dd/MM/yyyy HH:mm")</td>
+                    <td>@order.OrderStatus</td>
+                    <td>@order.PaymentMethod</td>
+                    <td>@order.OrderTotal.ToString("N0") đ</td>
+                    <td>
+                        <a asp-area="Admin" asp-controller="Order" asp-action="Details" asp-route-id="@order.Id" class="btn btn-primary btn-sm">
+                            Xem chi tiết
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+

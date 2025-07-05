@@ -1,0 +1,59 @@
+﻿@using BookStore.Models
+@using BookStore.Utility
+@model List<Category>
+@{
+    ViewData["Title"] = "Index của Category";
+}
+
+<h1>Category</h1>
+<h4>Model count: @Model?.Count()</h4>
+<p>User: @User.Identity.Name</p>
+<p>Role Admin: @(User.IsInRole("Admin"))</p>
+
+<div class="container">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary">
+                Category List
+            </h2>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-area="Employee" asp-controller="Category" asp-action="Create" class="btn btn-primary">
+                <i class="bi bi-plus-circle"></i> Tạo danh mục mới
+            </a>
+        </div>
+    </div>
+</div>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Tên danh mục</th>
+            <th>Thứ tự hiển thị</th>
+            <th colspan="2">Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var obj in Model.OrderBy(u => u.DisplayOrder))
+        {
+            <tr>
+                <td>@obj.Name</td>
+                <td>@obj.DisplayOrder</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <a asp-area="Employee" asp-controller="Category" asp-action="Edit" asp-route-id="@obj.Id" class="btn btn-warning btn-sm">
+                            <i class="bi bi-pencil"></i> Sửa
+                        </a>
+                    </div>
+                </td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <a asp-area="Employee" asp-controller="Category" asp-action="Delete" asp-route-id="@obj.Id" class="btn btn-danger btn-sm">
+                            <i class="bi bi-trash"></i> Xoá
+                        </a>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

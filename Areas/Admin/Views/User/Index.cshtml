@@ -1,0 +1,60 @@
+﻿
+@{
+    var role = Context.Request.Query["role"];
+    var customer = "text-primary";
+    var admin = "text-primary";
+    var employee = "text-primary";
+    var all = "text-primary";
+    switch (role)
+    {
+        case "customer": customer = "active text-white bg-primary"; break;
+        case "admin": admin = "active text-white bg-primary"; break;
+        case "employee": employee = "active text-white bg-primary"; break;
+        default: all = "active text-white bg-primary"; break;
+    }
+
+
+}
+<h1>User</h1>
+<div class="container">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary">User List</h2>
+        </div>
+        <div class="d-flex justify-content-between pb-5 pt-2">
+            <span></span>
+            <ul class="list-group list-group-horizontal-sm">
+                <a style="text-decoration:none;" asp-controller="User" asp-action="Index" asp-route-status="customer">
+                <li class="list-group-item @customer">customer</li>
+                </a>
+                <a style="text-decoration:none;" asp-controller="User" asp-action="Index" asp-route-status="admin">
+                <li class="list-group-item @admin">admin</li>
+                </a>
+                <a style="text-decoration:none;" asp-controller="User" asp-action="Index" asp-route-status="employee">
+                <li class="list-group-item @employee">employee</li>
+                </a>
+                <a style="text-decoration:none;" asp-controller="User" asp-action="Index" asp-route-status="all">
+                <li class="list-group-item @all">All</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<table id="tblData" class="table table-bordered table-striped align-middle mt-3" style="width:100%">
+    <thead class="table-dark">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Phone Number</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th class="text-center">Actions</th>
+        </tr>
+    </thead>
+</table>
+
+@section Scripts {
+    <script src="~/js/user.js"></script>
+}

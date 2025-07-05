@@ -1,0 +1,12 @@
+﻿@model string
+
+<span class="badge
+    @(Model == SD.StatusPending ? "bg-warning" :
+      Model == SD.StatusApproved ? "bg-info" :
+      Model == SD.StatusInProcess ? "bg-primary" :
+      Model == SD.StatusShipped ? "bg-dark" :
+      Model == SD.StatusCompleted ? "bg-success" :
+      Model == SD.StatusCancelled ? "bg-danger" :
+      Model == SD.StatusRefunded ? "bg-secondary" : "bg-light")">
+    @Model
+</span>

@@ -1,0 +1,132 @@
+﻿@model ProductVM
+
+<div class="card shadow border-0 my-4">
+    <div class="card-header bg-secondary bg-gradient py-3">
+        <div class="text-center">
+            <h2 class="text-white fw-bold">
+                @(Model.Product.Id != 0 ? "📝 Update Product" : "➕ Create Product")
+            </h2>
+        </div>
+    </div>
+    <div class="card-body p-4">
+        <form method="post" enctype="multipart/form-data">
+            <input asp-for="Product.Id" type="hidden" />
+            <div class="row">
+                <!-- Left: Form input -->
+                <div class="col-md-8">
+                    <div class="border rounded p-4 shadow-sm bg-light">
+
+                        <div asp-validation-summary="All" class="text-danger"></div>
+
+                        <div class="mb-3">
+                            <label asp-for="Product.Title" class="form-label"></label>
+                            <input asp-for="Product.Title" class="form-control" />
+                            <span asp-validation-for="Product.Title" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Product.Description" class="form-label"></label>
+                            <input asp-for="Product.Description" class="form-control" />
+                            <span asp-validation-for="Product.Description" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Product.ISBN" class="form-label"></label>
+                            <input asp-for="Product.ISBN" class="form-control" />
+                            <span asp-validation-for="Product.ISBN" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Product.Author" class="form-label"></label>
+                            <input asp-for="Product.Author" class="form-control" />
+                            <span asp-validation-for="Product.Author" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Product.ListPrice" class="form-label"></label>
+                            <input asp-for="Product.ListPrice" class="form-control" />
+                            <span asp-validation-for="Product.ListPrice" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Product.Price" class="form-label"></label>
+                            <input asp-for="Product.Price" class="form-control" />
+                            <span asp-validation-for="Product.Price" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Product.Price50" class="form-label"></label>
+                            <input asp-for="Product.Price50" class="form-control" />
+                            <span asp-validation-for="Product.Price50" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Product.Price100" class="form-label"></label>
+                            <input asp-for="Product.Price100" class="form-control" />
+                            <span asp-validation-for="Product.Price100" class="text-danger"></span>
+                        </div>
+
+                        <!-- Category Dropdown -->
+                        <div class="mb-3">
+                            <label asp-for="Product.CategoryId" class="form-label"></label>
+                            <select asp-for="Product.CategoryId" asp-items="@Model.CategoryList" class="form-select">
+                                <option disabled selected>-- Select Category --</option>
+                            </select>
+                            <span asp-validation-for="Product.CategoryId" class="text-danger"></span>
+                        </div>
+
+                        <!-- File Upload -->
+                        <div class="mb-3">
+                            <label class="form-label">Upload Image</label>
+                            <input type="file" name="file" asp-for="Product.ImageUrl" class="form-control" onchange="previewImage(event)" />
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="d-flex gap-3 mt-4">
+                            <button type="submit" class="btn btn-success px-4">
+                                <i class="bi bi-check-circle"></i>
+                                @(Model.Product.Id != 0 ? "Update" : "Create")
+                            </button>
+                            <a asp-controller="Product" asp-action="Index" class="btn btn-outline-secondary px-4">
+                                <i class="bi bi-arrow-left-circle"></i> Back to List
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Image Preview -->
+                <div class="col-md-4">
+                    <div class="border rounded p-3 shadow-sm text-center">
+                        <h5>Image Preview</h5>
+                        @if (!string.IsNullOrEmpty(Model.Product.ImageUrl))
+                        {
+                            <img id="preview" src="/@Model.Product.ImageUrl?@DateTime.Now.Ticks" class="img-fluid rounded shadow-sm mt-2" />
+                        }
+                        else
+                        {
+                            <img id="preview" src="#" class="img-fluid rounded shadow-sm mt-2" style="display:none;" />
+                            <p class="text-muted mt-2">No image selected</p>
+                        }
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial.cshtml" />
+    <script>
+        function previewImage(event) {
+            const reader = new FileReader();
+            reader.onload = function () {
+                const preview = document.getElementById('preview');
+                preview.src = reader.result;
+                preview.style.display = 'block';
+            };
+            if (event.target.files.length > 0) {
+                reader.readAsDataURL(event.target.files[0]);
+            }
+        }
+    </script>
+}

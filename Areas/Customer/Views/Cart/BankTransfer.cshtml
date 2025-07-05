@@ -1,0 +1,25 @@
+﻿@model BookStore.Models.OrderHeader
+@{
+    ViewData["Title"] = "Chuyển khoản ngân hàng";
+}
+
+<div class="container mt-4">
+    <h2 class="text-center text-primary">Thanh toán chuyển khoản ngân hàng</h2>
+    <hr />
+    <div class="alert alert-info">
+        <h5>Thông tin chuyển khoản</h5>
+        <p><strong>Ngân hàng:</strong> TP bank</p>
+        <p><strong>Chủ tài khoản:</strong> Huỳnh Quang Lộc</p>
+        <p><strong>Số tài khoản:</strong> 0967524551</p>
+        <p><strong>Nội dung chuyển khoản:</strong> Thanh toán đơn hàng #@Model.Id</p>
+    </div>
+
+    <div class="alert alert-warning">
+        <i class="bi bi-exclamation-triangle-fill"></i>
+        Vui lòng chuyển khoản và chờ xác nhận từ nhân viên. Đơn hàng sẽ không được xử lý cho đến khi thanh toán hoàn tất.
+    </div>
+
+    <a asp-controller="Home" asp-action="Index" class="btn btn-outline-primary">
+        <i class="bi bi-arrow-left"></i> Quay về trang chủ
+    </a>
+</div>

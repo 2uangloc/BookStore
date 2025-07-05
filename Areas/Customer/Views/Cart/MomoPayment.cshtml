@@ -1,0 +1,26 @@
+﻿@model BookStore.Models.OrderHeader
+@{
+    ViewData["Title"] = "Thanh toán qua Momo";
+}
+
+<div class="container mt-4 text-center">
+    <h2 class="text-primary">Đang chuyển đến cổng thanh toán Momo...</h2>
+    <hr />
+    <p>Vui lòng không rời khỏi trang hoặc tắt trình duyệt.</p>
+
+    <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+
+    <form id="momoForm" method="post" asp-action="RedirectToMomo" asp-controller="Cart">
+        <input type="hidden" name="orderId" value="@Model.Id" />
+    </form>
+</div>
+
+@section Scripts {
+    <script>
+        setTimeout(() => {
+            document.getElementById("momoForm").submit();
+        }, 2000); // Delay 2s để người dùng đọc thông báo
+    </script>
+}

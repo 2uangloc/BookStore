@@ -1,0 +1,53 @@
+﻿@model ShoppingCart
+
+@{
+    ViewData["Title"] = "Book Details";
+}
+<form method="post">
+    <input hidden asp-for="ProductId"/>
+    <div class="container mt-4">
+        <a asp-action="Index" class="btn btn-secondary mt-3">← Back to List</a>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="/@Model.Product.ImageUrl" class="img-fluid rounded shadow" alt="@Model.Product.Title" />
+            </div>
+            <div class="col-md-8">
+                <h2 class="text-primary">@Model.Product.Title</h2>
+                <h5 class="text-muted">by @Model.Product.Author</h5>
+
+                <hr />
+                <p><strong>Category:</strong> @Model.Product.Category?.Name</p>
+                <p><strong>ISBN:</strong> @Model.Product.ISBN</p>
+                <p><strong>Description:</strong></p>
+                <p>@Model.Product.Description</p>
+
+                <hr />
+                <h4 class="text-success">Prices</h4>
+                <ul>
+                    <li><strong>List Price:</strong> @Model.Product.ListPrice.ToString("C")</li>
+                    <li><strong>Price (1-49):</strong> @Model.Product.Price.ToString("C")</li>
+                    <li><strong>Price (50+):</strong> @Model.Product.Price50.ToString("C")</li>
+                    <li><strong>Price (100+):</strong> @Model.Product.Price100.ToString("C")</li>
+                </ul>
+            </div>
+            <div class="row p-lg-2 my-3">
+                <div class="col-md-4">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text bg-primary text-white border-0 fw-semibold" id="inputGroup-sizing-default">
+                            Count
+                        </span>
+                        <input asp-for="Count" type="number" value="1" class="form-control text-end" />
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-12 col-md-6 pb-1">
+                    <button type="submit" class="btn btn-primary ">
+                        Add to cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
