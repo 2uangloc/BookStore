@@ -8,7 +8,7 @@ Website bán sách online được xây dựng bằng ASP.NET Core MVC.
 - 👤 Đăng nhập, phân quyền Admin - Employee - Customer
 - 🔐 Ghi log hoạt động Create/Update/Delete (Audit Log)
 - 📦 Quản lý đơn hàng, trạng thái xử lý, thanh toán
-- 📊 Quản lý dữ liệu bằng DataTables (AJAX, lọc)
+- 📊 Quản lý dữ liệu bằng DataTables (AJAX)
 
 ## 🛠️ Công nghệ
 
